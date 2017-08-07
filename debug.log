@@ -283,3 +283,52 @@
 - 19:37:04.281 DEBUG: OnBrowserDestroyed()
 - 19:37:04.812 INFO: Ended application
 - 19:37:04.812 INFO: --------------------------------------------------------
+- 19:45:46.156 INFO: --------------------------------------------------------
+- 19:45:46.156 INFO: Started application
+- 19:45:46.156 INFO: Logging to: C:\Users\Andre\Desktop\cutcheck-master\debug.log
+- 19:45:46.156 INFO: Log level = DEBUG4
+- 19:45:46.156 INFO: Starting Mongoose 3.9c web server
+- 19:45:46.156 INFO: WWW directory: C:\Users\Andre\Desktop\cutcheck-master\www
+- 19:45:46.172 INFO: Index files: index.html,index.php
+- 19:45:46.172 INFO: CGI interpreter: C:\Users\Andre\Desktop\cutcheck-master\php\php-cgi.exe
+- 19:45:46.172 INFO: CGI pattern: **.php$
+- 19:45:46.172 INFO: CGI environment variables set: TMP=C:\Users\Andre\AppData\Local\Temp\,TEMP=C:\Users\Andre\AppData\Local\Temp\,TMPDIR=C:\Users\Andre\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=31.8
+- 19:45:46.188 INFO: Web server url: http://127.0.0.1:59484/
+- 19:45:46.188 INFO: remote_debugging_port = 61806
+- 19:45:46.203 DEBUG: Command line string for the browser process: "C:\Users\Andre\Desktop\cutcheck-master\phpdesktop-chrome.exe" --lang=en-US --log-file="C:\Users\Andre\Desktop\cutcheck-master\debug.log" --remote-debugging-port=61806 --no-sandbox
+- 19:45:49.703 DEBUG: App::OnContextInitialized()
+- 19:45:49.703 DEBUG: Window max width/height = 1286/680
+- 19:45:49.703 DEBUG: Window max size exceeded, new width/height = 1024/680
+- 19:45:49.719 DEBUG: GetBrowserWindow(): not found, hwnd = 67110
+- 19:45:49.719 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 19:45:49.719 DEBUG: BrowserWindow::CreateBrowserControl()
+- 19:45:49.719 DEBUG: StoreBrowserWindow(): hwnd = 67110
+- 19:45:49.750 DEBUG: BrowserWindow::OnSize() failed: CefBrowser object not created yet
+- 19:45:50.860 DEBUG: ClientHandler::OnAfterCreated()
+- 19:45:50.860 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 19:45:50.875 INFO: DPI, ppix = 96, ppiy = 96
+- 19:45:50.875 INFO: DPI, browser zoom level = 0
+- 19:45:50.891 DEBUG: OnLoadingStateChange: loading=1, url=
+- 19:45:50.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Andre\Desktop\cutcheck-master\phpdesktop-chrome.exe" --type=gpu-process --channel="7136.0.1805767316\1240929983" --no-sandbox --lang=en-US --log-file="C:\Users\Andre\Desktop\cutcheck-master\debug.log" --disable-d3d11 --supports-dual-gpus=false --gpu-driver-bug-workarounds=0,3,5,12,22 --gpu-vendor-id=0x8086 --gpu-device-id=0x0f31 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=10.18.10.4491 --lang=en-US --log-file="C:\Users\Andre\Desktop\cutcheck-master\debug.log" /prefetch:822062411
+- 19:45:50.000 DEBUG: Command line string for the renderer process: "C:\Users\Andre\Desktop\cutcheck-master\phpdesktop-chrome.exe" --type=renderer --no-sandbox --lang=en-US --lang=en-US --log-file="C:\Users\Andre\Desktop\cutcheck-master\debug.log" --channel="7136.1.2085660138\1504934995" /prefetch:673131151
+- 19:45:50.171 DEBUG: OnBrowserCreated()
+- 19:45:55.563 INFO: GET 200 /
+- 19:45:55.703 DEBUG: OnContextCreated()
+- 19:45:55.797 INFO: GET 200 /bower_components/bootstrap/dist/css/bootstrap.min.css
+- 19:45:56.938 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:59484/
+- 19:45:57.750 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:59484/
+- 19:45:58.141 INFO: GET 200 /pro/index.php
+- 19:45:58.156 DEBUG: OnContextCreated()
+- 19:45:58.203 INFO: GET 200 /js/ajaxr.js
+- 19:45:58.750 INFO: GET 200 /masterimg.php?recipe=c1
+- 19:45:58.766 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:59484/pro/index.php
+- 19:46:01.516 DEBUG: WM_DESTROY
+- 19:46:01.516 DEBUG: RemoveBrowserWindow(): hwnd = 67110
+- 19:46:01.531 INFO: Stopping Mongoose web server
+- 19:46:01.531 DEBUG: Mongoose webserver stopped immediately
+- 19:46:01.531 DEBUG: RemoveBrowserWindow(): hwnd = 67120
+- 19:46:01.531 DEBUG: GetBrowserWindow(): not found, hwnd = 67120
+- 19:46:01.531 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 19:46:01.640 DEBUG: OnBrowserDestroyed()
+- 19:46:01.656 INFO: Ended application
+- 19:46:01.656 INFO: --------------------------------------------------------
