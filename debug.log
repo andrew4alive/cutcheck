@@ -1,0 +1,285 @@
+- 19:31:22.187 INFO: --------------------------------------------------------
+- 19:31:22.187 INFO: Started application
+- 19:31:22.187 INFO: Logging to: D:\Andre\phpdesktop-chrome-31.8-php-5.6.1\debug.log
+- 19:31:22.187 INFO: Log level = DEBUG4
+- 19:31:22.187 INFO: Starting Mongoose 3.9c web server
+- 19:31:22.187 INFO: WWW directory: D:\Andre\phpdesktop-chrome-31.8-php-5.6.1\www
+- 19:31:22.187 INFO: Index files: index.html,index.php
+- 19:31:22.187 INFO: CGI interpreter: D:\Andre\phpdesktop-chrome-31.8-php-5.6.1\php\php-cgi.exe
+- 19:31:22.187 INFO: CGI pattern: **.php$
+- 19:31:22.187 INFO: CGI environment variables set: TMP=C:\Users\Andre\AppData\Local\Temp\,TEMP=C:\Users\Andre\AppData\Local\Temp\,TMPDIR=C:\Users\Andre\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=31.8
+- 19:31:22.203 INFO: Web server url: http://127.0.0.1:59128/
+- 19:31:22.218 INFO: remote_debugging_port = 49266
+- 19:31:22.281 DEBUG: Command line string for the browser process: "D:\Andre\phpdesktop-chrome-31.8-php-5.6.1\phpdesktop-chrome.exe" --lang=en-US --log-file="D:\Andre\phpdesktop-chrome-31.8-php-5.6.1\debug.log" --remote-debugging-port=49266 --no-sandbox
+- 19:33:45.140 INFO: --------------------------------------------------------
+- 19:33:45.140 INFO: Started application
+- 19:33:45.140 INFO: Logging to: C:\Users\Andre\Desktop\checkcut_s\debug.log
+- 19:33:45.140 INFO: Log level = DEBUG4
+- 19:33:45.140 INFO: Starting Mongoose 3.9c web server
+- 19:33:45.140 INFO: WWW directory: C:\Users\Andre\Desktop\checkcut_s\www
+- 19:33:45.140 INFO: Index files: index.html,index.php
+- 19:33:45.156 INFO: CGI interpreter: C:\Users\Andre\Desktop\checkcut_s\php\php-cgi.exe
+- 19:33:45.156 INFO: CGI pattern: **.php$
+- 19:33:45.156 INFO: CGI environment variables set: TMP=C:\Users\Andre\AppData\Local\Temp\,TEMP=C:\Users\Andre\AppData\Local\Temp\,TMPDIR=C:\Users\Andre\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=31.8
+- 19:33:45.156 INFO: Web server url: http://127.0.0.1:59135/
+- 19:33:45.172 INFO: remote_debugging_port = 60804
+- 19:33:45.187 DEBUG: Command line string for the browser process: "C:\Users\Andre\Desktop\checkcut_s\phpdesktop-chrome.exe" --lang=en-US --log-file="C:\Users\Andre\Desktop\checkcut_s\debug.log" --remote-debugging-port=60804 --no-sandbox
+- 19:33:47.297 DEBUG: App::OnContextInitialized()
+- 19:33:47.297 DEBUG: Window max width/height = 1286/680
+- 19:33:47.297 DEBUG: Window max size exceeded, new width/height = 1024/680
+- 19:33:47.297 DEBUG: GetBrowserWindow(): not found, hwnd = 66934
+- 19:33:47.297 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 19:33:47.297 DEBUG: BrowserWindow::CreateBrowserControl()
+- 19:33:47.297 DEBUG: StoreBrowserWindow(): hwnd = 66934
+- 19:33:47.312 DEBUG: BrowserWindow::OnSize() failed: CefBrowser object not created yet
+- 19:33:47.390 DEBUG: ClientHandler::OnAfterCreated()
+- 19:33:47.390 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 19:33:47.390 INFO: DPI, ppix = 96, ppiy = 96
+- 19:33:47.390 INFO: DPI, browser zoom level = 0
+- 19:33:47.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Andre\Desktop\checkcut_s\phpdesktop-chrome.exe" --type=gpu-process --channel="4008.0.660869001\1067721594" --no-sandbox --lang=en-US --log-file="C:\Users\Andre\Desktop\checkcut_s\debug.log" --disable-d3d11 --supports-dual-gpus=false --gpu-driver-bug-workarounds=0,3,5,12,22 --gpu-vendor-id=0x8086 --gpu-device-id=0x0f31 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=10.18.10.4491 --lang=en-US --log-file="C:\Users\Andre\Desktop\checkcut_s\debug.log" /prefetch:822062411
+- 19:33:47.422 DEBUG: OnLoadingStateChange: loading=1, url=
+- 19:33:48.015 DEBUG: Command line string for the renderer process: "C:\Users\Andre\Desktop\checkcut_s\phpdesktop-chrome.exe" --type=renderer --no-sandbox --lang=en-US --lang=en-US --log-file="C:\Users\Andre\Desktop\checkcut_s\debug.log" --channel="4008.1.1798950039\1292996300" /prefetch:673131151
+- 19:33:48.187 DEBUG: OnBrowserCreated()
+- 19:33:52.937 INFO: GET 200 /
+- 19:33:52.625 DEBUG: OnContextCreated()
+- 19:33:52.172 INFO: GET 200 /bower_components/bootstrap/dist/css/bootstrap.min.css
+- 19:33:52.297 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:59135/
+- 19:34:05.797 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:59135/
+- 19:34:05.015 INFO: GET 200 /pro/index.php
+- 19:34:05.515 DEBUG: OnContextCreated()
+- 19:34:05.062 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:59135/pro/index.php
+- 19:34:10.890 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:59135/pro/index.php
+- 19:34:11.406 DEBUG: OnContextCreated()
+- 19:34:11.906 INFO: GET 200 /
+- 19:34:11.906 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:59135/
+- 19:34:12.000 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:59135/
+- 19:34:12.750 DEBUG: OnContextCreated()
+- 19:34:12.265 INFO: GET 200 /editor.php
+- 19:34:12.328 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:59135/editor.php
+- 19:34:13.437 INFO: GET 200 /recipelist.php?_=1502105652874
+- 19:34:13.437 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:59135/editor.php
+- 19:34:13.437 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:59135/editor.php#c1
+[0807/193413:INFO:CONSOLE(174)] "{"2":"c1","3":"ww"}", source: http://127.0.0.1:59135/editor.php (174)
+- 19:34:13.422 INFO: GET 200 /recipelist.php?layer=c1
+- 19:34:14.562 INFO: GET 200 /recipelist.php?_=1502105654030
+- 19:34:15.547 INFO: GET 200 /recipelist.php?layer=c1
+- 19:34:15.687 INFO: GET 200 /recipelist.php?_=1502105655139
+- 19:34:15.922 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:59135/editor.php#c1
+- 19:34:15.640 DEBUG: OnContextCreated()
+- 19:34:15.140 INFO: GET 200 /editor.php?recipe=c1&layer=hey
+- 19:34:15.156 INFO: GET 200 /js/ajaxr.js
+[0807/193415:INFO:CONSOLE(141)] "[object Object]", source: http://127.0.0.1:59135/editor.php?recipe=c1&layer=hey (141)
+- 19:34:15.422 INFO: GET 200 /masterimg.php?recipe=c1
+- 19:34:16.672 INFO: GET 200 /layer-edit.php?_=1502105656014&recipe=c1&layer=hey&b=110&ow=863&oh=647
+- 19:34:16.687 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:59135/editor.php?recipe=c1&layer=hey#main
+- 19:34:17.578 INFO: GET 200 /test/gettestlist.php
+[0807/193417:INFO:CONSOLE(335)] "[object Object]", source: http://127.0.0.1:59135/editor.php?recipe=c1&layer=hey (335)
+- 19:34:17.250 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_27_AA0039_26-fail%20-%20Copy.jpg
+- 19:34:17.250 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_27_AA0039_26-fail%20-%20Copy%20-%20Copy.jpg
+- 19:34:17.250 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_25_AA0034_4-fail%20-%20Copy.jpg
+- 19:34:17.250 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_35_AA0039_136-fail%20-%20Copy.jpg
+- 19:34:17.250 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_33_AA0034_53-fail%20-%20Copy.jpg
+- 19:34:17.250 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_31_AA0039_31-fail%20-%20Copy.jpg
+- 19:34:18.765 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:59135/editor.php?recipe=c1&layer=hey#main
+- 19:34:18.890 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_35_AA0039_40-fail%20-%20Copy.jpg
+- 19:34:18.890 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_13_AA0034_46-fail.jpg
+- 19:34:18.890 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_12_AA0034_40-fail.jpg
+- 19:34:18.890 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_15_AA0034_45-fail.jpg
+- 19:34:18.172 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_16_AA0034_32-fail.jpg
+- 19:34:18.172 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_15_AA0034_53-fail.jpg
+- 19:34:18.187 INFO: GET 200 /editor.php?recipe=c1&layer=hey
+- 19:34:18.703 DEBUG: OnContextCreated()
+- 19:34:18.218 INFO: GET 304 /bower_components/bootstrap/dist/css/bootstrap.min.css
+- 19:34:18.218 INFO: GET 304 /js/ajaxr.js
+[0807/193418:INFO:CONSOLE(141)] "[object Object]", source: http://127.0.0.1:59135/editor.php?recipe=c1&layer=hey#main (141)
+- 19:34:18.281 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_6_AA0034_134-fail.jpg
+- 19:34:19.609 INFO: GET 200 /masterimg.php?recipe=c1
+- 19:34:19.172 INFO: GET 200 /layer-edit.php?_=1502105659217&recipe=c1&layer=hey&b=110&ow=555&oh=416
+- 19:34:19.203 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:59135/editor.php?recipe=c1&layer=hey#main
+- 19:34:20.750 INFO: GET 200 /test/gettestlist.php
+[0807/193420:INFO:CONSOLE(335)] "[object Object]", source: http://127.0.0.1:59135/editor.php?recipe=c1&layer=hey#main (335)
+- 19:34:20.343 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_35_AA0039_40-fail%20-%20Copy.jpg
+- 19:34:20.343 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_27_AA0039_26-fail%20-%20Copy.jpg
+- 19:34:20.343 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_25_AA0034_4-fail%20-%20Copy.jpg
+- 19:34:20.343 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_31_AA0039_31-fail%20-%20Copy.jpg
+- 19:34:20.343 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_27_AA0039_26-fail%20-%20Copy%20-%20Copy.jpg
+- 19:34:20.343 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_33_AA0034_53-fail%20-%20Copy.jpg
+- 19:34:21.828 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_35_AA0039_136-fail%20-%20Copy.jpg
+- 19:34:21.843 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_12_AA0034_40-fail.jpg
+- 19:34:21.843 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_15_AA0034_45-fail.jpg
+- 19:34:21.843 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_13_AA0034_46-fail.jpg
+- 19:34:21.953 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_15_AA0034_53-fail.jpg
+- 19:34:21.984 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:59135/editor.php?recipe=c1&layer=hey#main
+- 19:34:21.000 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:59135/editor.php?recipe=c1&layer=hey#test
+- 19:34:21.078 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_16_AA0034_32-fail.jpg
+- 19:34:21.093 INFO: GET 200 /test/gettestlist.php
+- 19:34:21.390 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_9_AA0034_90-fail.jpg
+- 19:34:21.390 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_19_AA0034_39-fail.jpg
+- 19:34:21.390 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_6_AA0034_134-fail.jpg
+- 19:34:23.765 INFO: GET 200 /test/gettestlist.php
+- 19:34:24.484 INFO: GET 200 /test/cwtest.php?target=26_UCA0796S-3_27_AA0039_26-fail%20-%20Copy%20-%20Copy.jpg&recipe=c1&layer=hey
+[0807/193424:INFO:CONSOLE(584)] "190:fail", source: http://127.0.0.1:59135/editor.php?recipe=c1&layer=hey#main (584)
+- 19:34:26.718 INFO: GET 200 /test/gettestlist.php
+- 19:34:27.609 INFO: GET 200 /test/cwtest.php?target=26_UCA0796S-3_31_AA0039_31-fail%20-%20Copy.jpg&recipe=c1&layer=hey
+[0807/193427:INFO:CONSOLE(584)] "185:fail", source: http://127.0.0.1:59135/editor.php?recipe=c1&layer=hey#main (584)
+- 19:34:28.015 INFO: GET 200 /test/gettestlist.php
+- 19:34:29.125 INFO: GET 200 /test/gettestlist.php
+- 19:34:30.484 INFO: GET 200 /test/cwtest.php?target=27_UCA0796S-3_6_AA0034_134-fail.jpg&recipe=c1&layer=hey
+[0807/193430:INFO:CONSOLE(584)] "17:pass", source: http://127.0.0.1:59135/editor.php?recipe=c1&layer=hey#main (584)
+- 19:34:32.531 INFO: GET 200 /test/gettestlist.php
+- 19:34:33.625 INFO: GET 200 /test/gettestlist.php
+- 19:34:34.734 INFO: GET 200 /test/gettestlist.php
+- 19:34:35.843 INFO: GET 200 /test/gettestlist.php
+- 19:34:36.953 INFO: GET 200 /test/gettestlist.php
+- 19:34:37.031 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:59135/editor.php?recipe=c1&layer=hey#test
+- 19:34:37.078 INFO: GET 200 /test/gettestlist.php
+- 19:34:37.656 DEBUG: OnContextCreated()
+- 19:34:37.156 INFO: GET 200 /editor.php
+- 19:34:37.187 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:59135/editor.php#c1
+- 19:34:37.328 INFO: GET 200 /recipelist.php?layer=c1
+- 19:34:37.343 INFO: GET 200 /recipelist.php?_=1502105677764
+[0807/193437:INFO:CONSOLE(174)] "{"2":"c1","3":"ww"}", source: http://127.0.0.1:59135/editor.php#c1 (174)
+- 19:34:38.015 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:59135/editor.php#c1
+- 19:34:39.015 INFO: GET 200 /index.php
+- 19:34:39.515 DEBUG: OnContextCreated()
+- 19:34:39.031 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:59135/index.php
+- 19:34:40.375 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:59135/index.php
+- 19:34:41.984 DEBUG: OnContextCreated()
+- 19:34:41.484 INFO: GET 200 /pro/index.php
+- 19:34:41.500 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:59135/pro/index.php
+- 19:34:46.031 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:59135/pro/index.php
+- 19:34:46.156 INFO: GET 302 /pro/index.php?lotn=test&recipe=c1
+- 19:34:46.765 DEBUG: OnContextCreated()
+- 19:34:46.265 INFO: GET 200 /pro/index.php
+- 19:34:47.547 INFO: GET 200 /masterimg.php?recipe=c1
+- 19:34:47.578 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:59135/pro/index.php
+- 19:34:49.734 INFO: GET 200 /pro/list.php
+- 19:34:50.859 INFO: GET 200 /pro/list.php
+- 19:34:51.984 INFO: GET 200 /pro/list.php
+- 19:34:52.109 INFO: GET 200 /pro/list.php
+- 19:34:53.218 INFO: GET 200 /pro/list.php
+- 19:34:54.359 INFO: GET 200 /pro/list.php
+- 19:34:56.468 INFO: GET 200 /pro/list.php
+- 19:34:57.593 INFO: GET 200 /pro/list.php
+- 19:34:58.703 INFO: GET 200 /pro/list.php
+- 19:34:59.968 INFO: GET 200 /pro/list.php
+- 19:35:00.125 INFO: GET 200 /pro/list.php
+- 19:35:01.265 INFO: GET 200 /pro/list.php
+- 19:35:02.406 INFO: GET 200 /pro/list.php
+- 19:35:04.531 INFO: GET 200 /pro/list.php
+- 19:35:05.672 INFO: GET 200 /pro/list.php
+- 19:35:06.937 INFO: GET 200 /pro/list.php
+- 19:35:07.218 INFO: GET 200 /pro/list.php
+- 19:35:08.359 INFO: GET 200 /pro/list.php
+- 19:35:10.484 INFO: GET 200 /pro/list.php
+- 19:35:11.609 INFO: GET 200 /pro/list.php
+- 19:35:12.734 INFO: GET 200 /pro/list.php
+- 19:35:13.843 INFO: GET 200 /pro/list.php
+- 19:35:14.968 INFO: GET 200 /pro/list.php
+- 19:35:15.078 INFO: GET 200 /pro/list.php
+- 19:35:16.203 INFO: GET 200 /pro/list.php
+- 19:35:17.328 INFO: GET 200 /pro/list.php
+- 19:35:19.453 INFO: GET 200 /pro/list.php
+- 19:35:20.562 INFO: GET 200 /pro/list.php
+- 19:35:21.703 INFO: GET 200 /pro/list.php
+- 19:35:22.828 INFO: GET 200 /pro/list.php
+- 19:35:23.937 INFO: GET 200 /pro/list.php
+- 19:35:24.047 INFO: GET 200 /pro/list.php
+- 19:35:25.172 INFO: GET 200 /pro/list.php
+- 19:35:26.281 INFO: GET 200 /pro/list.php
+- 19:35:27.406 INFO: GET 200 /pro/list.php
+- 19:35:29.531 INFO: GET 200 /pro/list.php
+- 19:35:30.640 INFO: GET 200 /pro/list.php
+- 19:35:31.765 INFO: GET 200 /pro/list.php
+- 19:35:32.890 INFO: GET 200 /pro/list.php
+- 19:35:33.015 INFO: GET 200 /pro/list.php
+- 19:35:34.125 INFO: GET 200 /pro/list.php
+- 19:35:35.250 INFO: GET 200 /pro/list.php
+- 19:35:36.375 INFO: GET 200 /pro/list.php
+- 19:35:38.500 INFO: GET 200 /pro/list.php
+- 19:35:39.625 INFO: GET 200 /pro/list.php
+- 19:35:40.750 INFO: GET 200 /pro/list.php
+- 19:35:41.875 INFO: GET 200 /pro/list.php
+- 19:35:42.000 INFO: GET 200 /pro/list.php
+- 19:35:43.109 INFO: GET 200 /pro/list.php
+- 19:35:44.250 INFO: GET 200 /pro/list.php
+- 19:35:45.359 INFO: GET 200 /pro/list.php
+- 19:35:47.484 INFO: GET 200 /pro/list.php
+- 19:35:48.593 INFO: GET 200 /pro/list.php
+- 19:35:49.718 INFO: GET 200 /pro/list.php
+- 19:35:50.843 INFO: GET 200 /pro/list.php
+- 19:35:51.968 INFO: GET 200 /pro/list.php
+- 19:35:52.093 INFO: GET 200 /pro/list.php
+- 19:35:53.203 INFO: GET 200 /pro/list.php
+- 19:35:54.328 INFO: GET 200 /pro/list.php
+- 19:35:56.453 INFO: GET 200 /pro/list.php
+- 19:35:57.578 INFO: GET 200 /pro/list.php
+- 19:35:58.734 INFO: GET 200 /pro/list.php
+- 19:35:59.875 INFO: GET 200 /pro/list.php
+- 19:36:00.000 INFO: GET 200 /pro/list.php
+- 19:36:01.140 INFO: GET 200 /pro/list.php
+- 19:36:02.250 INFO: GET 200 /pro/list.php
+- 19:36:03.390 INFO: GET 200 /pro/list.php
+- 19:36:05.515 INFO: GET 200 /pro/list.php
+- 19:36:06.656 INFO: GET 200 /pro/list.php
+- 19:36:07.781 INFO: GET 200 /pro/list.php
+- 19:36:08.906 INFO: GET 200 /pro/list.php
+- 19:36:09.015 INFO: GET 200 /pro/list.php
+- 19:36:10.140 INFO: GET 200 /pro/list.php
+- 19:36:11.265 INFO: GET 200 /pro/list.php
+- 19:36:12.375 INFO: GET 200 /pro/list.php
+- 19:36:14.500 INFO: GET 200 /pro/list.php
+- 19:36:15.625 INFO: GET 200 /pro/list.php
+- 19:36:16.734 INFO: GET 200 /pro/list.php
+- 19:36:17.843 INFO: GET 200 /pro/list.php
+- 19:36:18.000 INFO: GET 200 /pro/list.php
+- 19:36:19.125 INFO: GET 200 /pro/list.php
+- 19:36:20.297 INFO: GET 200 /pro/list.php
+- 19:36:21.422 INFO: GET 200 /pro/list.php
+- 19:36:23.531 INFO: GET 200 /pro/list.php
+- 19:36:24.656 INFO: GET 200 /pro/list.php
+- 19:36:25.781 INFO: GET 200 /pro/list.php
+- 19:36:26.890 INFO: GET 200 /pro/list.php
+- 19:36:27.047 INFO: GET 200 /pro/list.php
+- 19:36:28.156 INFO: GET 200 /pro/list.php
+- 19:36:29.265 INFO: GET 200 /pro/list.php
+- 19:36:30.390 INFO: GET 200 /pro/list.php
+- 19:36:32.500 INFO: GET 200 /pro/list.php
+- 19:36:33.625 INFO: GET 200 /pro/list.php
+- 19:36:34.750 INFO: GET 200 /pro/list.php
+- 19:36:35.859 INFO: GET 200 /pro/list.php
+- 19:36:36.984 INFO: GET 200 /pro/list.php
+- 19:36:37.109 INFO: GET 200 /pro/list.php
+- 19:36:38.218 INFO: GET 200 /pro/list.php
+- 19:36:39.343 INFO: GET 200 /pro/list.php
+- 19:36:41.484 INFO: GET 200 /pro/list.php
+- 19:36:42.609 INFO: GET 200 /pro/list.php
+- 19:36:43.765 INFO: GET 200 /pro/list.php
+- 19:36:44.937 INFO: GET 200 /pro/list.php
+- 19:36:45.062 INFO: GET 200 /pro/list.php
+- 19:36:46.187 INFO: GET 200 /pro/list.php
+- 19:36:47.312 INFO: GET 200 /pro/list.php
+- 19:36:49.437 INFO: GET 200 /pro/list.php
+- 19:36:50.562 INFO: GET 200 /pro/list.php
+- 19:36:51.672 INFO: GET 200 /pro/list.php
+- 19:36:52.859 INFO: GET 200 /pro/list.php
+- 19:36:53.000 INFO: GET 200 /pro/list.php
+- 19:36:54.109 INFO: GET 200 /pro/list.php
+- 19:36:55.234 INFO: GET 200 /pro/list.php
+- 19:36:56.343 INFO: GET 200 /pro/list.php
+- 19:36:58.515 INFO: GET 200 /pro/list.php
+- 19:36:59.640 INFO: GET 200 /pro/list.php
+- 19:37:00.765 INFO: GET 200 /pro/list.php
+- 19:37:01.890 INFO: GET 200 /pro/list.php
+- 19:37:02.015 INFO: GET 200 /pro/list.php
+- 19:37:03.140 INFO: GET 200 /pro/list.php
+- 19:37:04.656 DEBUG: WM_DESTROY
+- 19:37:04.656 DEBUG: RemoveBrowserWindow(): hwnd = 66934
+- 19:37:04.672 INFO: Stopping Mongoose web server
+- 19:37:04.672 DEBUG: Mongoose webserver stopped immediately
+- 19:37:04.687 DEBUG: RemoveBrowserWindow(): hwnd = 66944
+- 19:37:04.687 DEBUG: GetBrowserWindow(): not found, hwnd = 66944
+- 19:37:04.687 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 19:37:04.281 DEBUG: OnBrowserDestroyed()
+- 19:37:04.812 INFO: Ended application
+- 19:37:04.812 INFO: --------------------------------------------------------

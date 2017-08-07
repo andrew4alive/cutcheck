@@ -1,0 +1,25 @@
+{
+    "name": "andrew/binary-inspect",
+    "description": "inspection binary file",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "andrew",
+            "email": "wahseong.tan@gmail.com"
+        }
+    ],
+    "require": {
+        "kosinix/grafika": "dev-master"
+    },
+
+    "autoload": {
+    "psr-4": {
+
+      "Core\\Bwcon\\": "core/bwcon/src/"
+
+
+
+      }
+}
+
+}
