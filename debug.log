@@ -332,3 +332,339 @@
 - 19:46:01.640 DEBUG: OnBrowserDestroyed()
 - 19:46:01.656 INFO: Ended application
 - 19:46:01.656 INFO: --------------------------------------------------------
+- 20:20:55.141 INFO: --------------------------------------------------------
+- 20:20:55.141 INFO: Started application
+- 20:20:55.141 INFO: Logging to: C:\Users\Andre\Desktop\cutcheck-master\debug.log
+- 20:20:55.141 INFO: Log level = DEBUG4
+- 20:20:55.141 INFO: Starting Mongoose 3.9c web server
+- 20:20:55.141 INFO: WWW directory: C:\Users\Andre\Desktop\cutcheck-master\www
+- 20:20:55.141 INFO: Index files: index.html,index.php
+- 20:20:55.141 INFO: CGI interpreter: C:\Users\Andre\Desktop\cutcheck-master\php\php-cgi.exe
+- 20:20:55.141 INFO: CGI pattern: **.php$
+- 20:20:55.156 INFO: CGI environment variables set: TMP=C:\Users\Andre\AppData\Local\Temp\,TEMP=C:\Users\Andre\AppData\Local\Temp\,TMPDIR=C:\Users\Andre\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=31.8
+- 20:20:55.156 INFO: Web server url: http://127.0.0.1:59996/
+- 20:20:55.172 INFO: remote_debugging_port = 61741
+- 20:20:55.188 DEBUG: Command line string for the browser process: "C:\Users\Andre\Desktop\cutcheck-master\cutcheck.exe" --lang=en-US --log-file="C:\Users\Andre\Desktop\cutcheck-master\debug.log" --remote-debugging-port=61741 --no-sandbox
+- 20:20:57.422 DEBUG: App::OnContextInitialized()
+- 20:20:57.422 DEBUG: Window max width/height = 1286/680
+- 20:20:57.422 DEBUG: Window max size exceeded, new width/height = 1024/680
+- 20:20:57.422 DEBUG: GetBrowserWindow(): not found, hwnd = 1246700
+- 20:20:57.422 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 20:20:57.422 DEBUG: BrowserWindow::CreateBrowserControl()
+- 20:20:57.422 DEBUG: StoreBrowserWindow(): hwnd = 1246700
+- 20:20:57.438 DEBUG: BrowserWindow::OnSize() failed: CefBrowser object not created yet
+- 20:20:57.516 DEBUG: ClientHandler::OnAfterCreated()
+- 20:20:57.531 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 20:20:57.531 INFO: DPI, ppix = 96, ppiy = 96
+- 20:20:57.531 INFO: DPI, browser zoom level = 0
+- 20:20:57.016 DEBUG: Command line string for the gpu-process process: "C:\Users\Andre\Desktop\cutcheck-master\cutcheck.exe" --type=gpu-process --channel="5744.0.1486960658\930786669" --no-sandbox --lang=en-US --log-file="C:\Users\Andre\Desktop\cutcheck-master\debug.log" --disable-d3d11 --supports-dual-gpus=false --gpu-driver-bug-workarounds=0,3,5,12,22 --gpu-vendor-id=0x8086 --gpu-device-id=0x0f31 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=10.18.10.4491 --lang=en-US --log-file="C:\Users\Andre\Desktop\cutcheck-master\debug.log" /prefetch:822062411
+- 20:20:58.578 DEBUG: OnLoadingStateChange: loading=1, url=
+- 20:20:58.016 DEBUG: Command line string for the renderer process: "C:\Users\Andre\Desktop\cutcheck-master\cutcheck.exe" --type=renderer --no-sandbox --lang=en-US --lang=en-US --log-file="C:\Users\Andre\Desktop\cutcheck-master\debug.log" --channel="5744.1.2080954776\458447802" /prefetch:673131151
+- 20:20:58.344 DEBUG: OnBrowserCreated()
+- 20:21:02.109 INFO: GET 200 /
+- 20:21:02.469 DEBUG: OnContextCreated()
+- 20:21:02.188 INFO: GET 200 /bower_components/bootstrap/dist/css/bootstrap.min.css
+- 20:21:02.297 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:59996/
+- 20:21:04.125 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:59996/
+- 20:21:04.391 INFO: GET 200 /pro/index.php
+- 20:21:04.719 DEBUG: OnContextCreated()
+- 20:21:04.453 INFO: GET 200 /js/ajaxr.js
+- 20:21:05.688 INFO: GET 200 /masterimg.php?recipe=c1
+- 20:21:05.703 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:59996/pro/index.php
+- 20:21:06.094 DEBUG: WM_DESTROY
+- 20:21:06.094 DEBUG: RemoveBrowserWindow(): hwnd = 1246700
+- 20:21:06.094 INFO: Stopping Mongoose web server
+- 20:21:06.109 DEBUG: Mongoose webserver stopped immediately
+- 20:21:06.109 DEBUG: RemoveBrowserWindow(): hwnd = 394686
+- 20:21:06.109 DEBUG: GetBrowserWindow(): not found, hwnd = 394686
+- 20:21:06.125 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 20:21:06.516 DEBUG: OnBrowserDestroyed()
+- 20:21:06.188 INFO: Ended application
+- 20:21:06.188 INFO: --------------------------------------------------------
+- 20:26:26.094 INFO: --------------------------------------------------------
+- 20:26:26.094 INFO: Started application
+- 20:26:26.094 INFO: Logging to: C:\Users\Andre\Desktop\cutcheck-master\debug.log
+- 20:26:26.094 INFO: Log level = DEBUG4
+- 20:26:26.094 INFO: Starting Mongoose 3.9c web server
+- 20:26:26.094 INFO: WWW directory: C:\Users\Andre\Desktop\cutcheck-master\www
+- 20:26:26.094 INFO: Index files: index.html,index.php
+- 20:26:26.094 INFO: CGI interpreter: C:\Users\Andre\Desktop\cutcheck-master\php\php-cgi.exe
+- 20:26:26.094 INFO: CGI pattern: **.php$
+- 20:26:26.094 INFO: CGI environment variables set: TMP=C:\Users\Andre\AppData\Local\Temp\,TEMP=C:\Users\Andre\AppData\Local\Temp\,TMPDIR=C:\Users\Andre\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=31.8
+- 20:26:26.110 INFO: Web server url: http://127.0.0.1:60037/
+- 20:26:26.110 INFO: remote_debugging_port = 62443
+- 20:26:26.125 DEBUG: Command line string for the browser process: "C:\Users\Andre\Desktop\cutcheck-master\cutcheck.exe" --lang=en-US --log-file="C:\Users\Andre\Desktop\cutcheck-master\debug.log" --remote-debugging-port=62443 --no-sandbox
+- 20:26:26.188 DEBUG: App::OnContextInitialized()
+- 20:26:26.188 DEBUG: Window max width/height = 1286/680
+- 20:26:26.188 DEBUG: Window max size exceeded, new width/height = 1024/680
+- 20:26:26.188 DEBUG: GetBrowserWindow(): not found, hwnd = 2164008
+- 20:26:26.188 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 20:26:26.188 DEBUG: BrowserWindow::CreateBrowserControl()
+- 20:26:26.188 DEBUG: StoreBrowserWindow(): hwnd = 2164008
+- 20:26:26.204 DEBUG: BrowserWindow::OnSize() failed: CefBrowser object not created yet
+- 20:26:26.250 DEBUG: ClientHandler::OnAfterCreated()
+- 20:26:26.250 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 20:26:26.250 INFO: DPI, ppix = 96, ppiy = 96
+- 20:26:26.250 INFO: DPI, browser zoom level = 0
+- 20:26:26.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Andre\Desktop\cutcheck-master\cutcheck.exe" --type=gpu-process --channel="7076.0.2001725571\2104272233" --no-sandbox --lang=en-US --log-file="C:\Users\Andre\Desktop\cutcheck-master\debug.log" --disable-d3d11 --supports-dual-gpus=false --gpu-driver-bug-workarounds=0,3,5,12,22 --gpu-vendor-id=0x8086 --gpu-device-id=0x0f31 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=10.18.10.4491 --lang=en-US --log-file="C:\Users\Andre\Desktop\cutcheck-master\debug.log" /prefetch:822062411
+- 20:26:26.266 DEBUG: OnLoadingStateChange: loading=1, url=
+- 20:26:26.016 DEBUG: Command line string for the renderer process: "C:\Users\Andre\Desktop\cutcheck-master\cutcheck.exe" --type=renderer --no-sandbox --lang=en-US --lang=en-US --log-file="C:\Users\Andre\Desktop\cutcheck-master\debug.log" --channel="7076.1.1276321540\2074167001" /prefetch:673131151
+- 20:26:26.047 DEBUG: OnBrowserCreated()
+- 20:26:28.563 INFO: GET 200 /
+- 20:26:28.250 DEBUG: OnContextCreated()
+- 20:26:28.579 INFO: GET 200 /bower_components/bootstrap/dist/css/bootstrap.min.css
+- 20:26:28.688 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:60037/
+- 20:26:30.079 DEBUG: WM_DESTROY
+- 20:26:30.079 DEBUG: RemoveBrowserWindow(): hwnd = 2164008
+- 20:26:30.079 INFO: Stopping Mongoose web server
+- 20:26:30.094 DEBUG: Mongoose webserver stopped immediately
+- 20:26:30.094 DEBUG: RemoveBrowserWindow(): hwnd = 525298
+- 20:26:30.094 DEBUG: GetBrowserWindow(): not found, hwnd = 525298
+- 20:26:30.094 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 20:26:30.844 DEBUG: OnBrowserDestroyed()
+- 20:26:30.172 INFO: Ended application
+- 20:26:30.172 INFO: --------------------------------------------------------
+- 20:27:30.094 INFO: --------------------------------------------------------
+- 20:27:30.094 INFO: Started application
+- 20:27:30.094 INFO: Logging to: C:\Users\Andre\Desktop\cutcheck-master\debug.log
+- 20:27:30.094 INFO: Log level = DEBUG4
+- 20:27:30.094 INFO: Starting Mongoose 3.9c web server
+- 20:27:30.094 INFO: WWW directory: C:\Users\Andre\Desktop\cutcheck-master\www
+- 20:27:30.094 INFO: Index files: index.html,index.php
+- 20:27:30.094 INFO: CGI interpreter: C:\Users\Andre\Desktop\cutcheck-master\php\php-cgi.exe
+- 20:27:30.094 INFO: CGI pattern: **.php$
+- 20:27:30.094 INFO: CGI environment variables set: TMP=C:\Users\Andre\AppData\Local\Temp\,TEMP=C:\Users\Andre\AppData\Local\Temp\,TMPDIR=C:\Users\Andre\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=31.8
+- 20:27:30.109 INFO: Web server url: http://127.0.0.1:60042/
+- 20:27:30.109 INFO: remote_debugging_port = 59345
+- 20:27:30.109 DEBUG: Command line string for the browser process: "C:\Users\Andre\Desktop\cutcheck-master\cutcheck.exe" --lang=en-US --log-file="C:\Users\Andre\Desktop\cutcheck-master\debug.log" --remote-debugging-port=59345 --no-sandbox
+- 20:27:30.172 DEBUG: App::OnContextInitialized()
+- 20:27:30.172 DEBUG: Window max width/height = 1286/680
+- 20:27:30.172 DEBUG: Window max size exceeded, new width/height = 1024/680
+- 20:27:30.187 DEBUG: GetBrowserWindow(): not found, hwnd = 525826
+- 20:27:30.187 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 20:27:30.187 DEBUG: BrowserWindow::CreateBrowserControl()
+- 20:27:30.187 DEBUG: StoreBrowserWindow(): hwnd = 525826
+- 20:27:30.203 DEBUG: BrowserWindow::OnSize() failed: CefBrowser object not created yet
+- 20:27:30.234 DEBUG: ClientHandler::OnAfterCreated()
+- 20:27:30.234 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 20:27:30.234 INFO: DPI, ppix = 96, ppiy = 96
+- 20:27:30.234 INFO: DPI, browser zoom level = 0
+- 20:27:30.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Andre\Desktop\cutcheck-master\cutcheck.exe" --type=gpu-process --channel="6912.0.1729756530\259851072" --no-sandbox --lang=en-US --log-file="C:\Users\Andre\Desktop\cutcheck-master\debug.log" --disable-d3d11 --supports-dual-gpus=false --gpu-driver-bug-workarounds=0,3,5,12,22 --gpu-vendor-id=0x8086 --gpu-device-id=0x0f31 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=10.18.10.4491 --lang=en-US --log-file="C:\Users\Andre\Desktop\cutcheck-master\debug.log" /prefetch:822062411
+- 20:27:30.265 DEBUG: OnLoadingStateChange: loading=1, url=
+- 20:27:30.000 DEBUG: Command line string for the renderer process: "C:\Users\Andre\Desktop\cutcheck-master\cutcheck.exe" --type=renderer --no-sandbox --lang=en-US --lang=en-US --log-file="C:\Users\Andre\Desktop\cutcheck-master\debug.log" --channel="6912.1.1209649868\1479079104" /prefetch:673131151
+- 20:27:30.032 DEBUG: OnBrowserCreated()
+- 20:27:33.406 INFO: GET 200 /
+- 20:27:33.110 DEBUG: OnContextCreated()
+- 20:27:33.437 INFO: GET 200 /bower_components/bootstrap/dist/css/bootstrap.min.css
+- 20:27:33.531 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:60042/
+- 20:27:34.344 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:60042/
+- 20:27:35.313 DEBUG: OnContextCreated()
+- 20:27:35.625 INFO: GET 200 /editor.php
+- 20:27:35.703 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:60042/editor.php
+- 20:27:35.797 INFO: GET 200 /recipelist.php?_=1502108855300
+- 20:27:35.812 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:60042/editor.php
+- 20:27:35.812 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:60042/editor.php#c1
+[0807/202735:INFO:CONSOLE(174)] "{"2":"c1","3":"ww"}", source: http://127.0.0.1:60042/editor.php (174)
+- 20:27:36.781 INFO: GET 200 /recipelist.php?layer=c1
+- 20:27:36.922 INFO: GET 200 /recipelist.php?_=1502108856456
+- 20:27:37.906 INFO: GET 200 /recipelist.php?layer=c1
+- 20:27:37.062 INFO: GET 200 /recipelist.php?_=1502108857581
+- 20:27:37.094 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:60042/editor.php#c1
+- 20:27:37.000 DEBUG: OnContextCreated()
+- 20:27:37.328 INFO: GET 200 /editor.php?recipe=c1&layer=hey
+- 20:27:37.328 INFO: GET 200 /js/ajaxr.js
+[0807/202738:INFO:CONSOLE(141)] "[object Object]", source: http://127.0.0.1:60042/editor.php?recipe=c1&layer=hey (141)
+- 20:27:38.625 INFO: GET 200 /masterimg.php?recipe=c1
+- 20:27:38.890 INFO: GET 200 /layer-edit.php?_=1502108858284&recipe=c1&layer=hey&b=110&ow=863&oh=647
+- 20:27:38.890 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:60042/editor.php?recipe=c1&layer=hey#main
+- 20:27:39.797 INFO: GET 200 /test/gettestlist.php
+[0807/202739:INFO:CONSOLE(335)] "[object Object]", source: http://127.0.0.1:60042/editor.php?recipe=c1&layer=hey (335)
+- 20:27:40.359 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_35_AA0039_136-fail%20-%20Copy.jpg
+- 20:27:40.390 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_33_AA0034_53-fail%20-%20Copy.jpg
+- 20:27:40.390 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_31_AA0039_31-fail%20-%20Copy.jpg
+- 20:27:40.406 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_27_AA0039_26-fail%20-%20Copy%20-%20Copy.jpg
+- 20:27:40.406 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_25_AA0034_4-fail%20-%20Copy.jpg
+- 20:27:40.406 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_27_AA0039_26-fail%20-%20Copy.jpg
+- 20:27:40.922 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_35_AA0039_40-fail%20-%20Copy.jpg
+- 20:27:40.937 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_15_AA0034_53-fail.jpg
+- 20:27:40.984 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_13_AA0034_46-fail.jpg
+- 20:27:40.984 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_12_AA0034_40-fail.jpg
+- 20:27:40.984 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_15_AA0034_45-fail.jpg
+- 20:27:40.094 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_16_AA0034_32-fail.jpg
+- 20:27:40.140 INFO: GET 200 /test/gettestlist.php
+- 20:27:40.344 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_19_AA0034_39-fail.jpg
+- 20:27:41.375 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_9_AA0034_90-fail.jpg
+- 20:27:41.375 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_6_AA0034_134-fail.jpg
+- 20:27:42.547 INFO: GET 200 /test/gettestlist.php
+- 20:27:43.672 INFO: GET 200 /test/gettestlist.php
+- 20:27:44.797 INFO: GET 200 /test/gettestlist.php
+- 20:27:44.953 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:60042/editor.php?recipe=c1&layer=hey#main
+- 20:27:44.875 DEBUG: OnContextCreated()
+- 20:27:44.187 INFO: GET 200 /editor.php?recipe=c1&layer=hey
+- 20:27:44.203 INFO: GET 304 /bower_components/bootstrap/dist/css/bootstrap.min.css
+- 20:27:44.203 INFO: GET 304 /js/ajaxr.js
+[0807/202744:INFO:CONSOLE(141)] "[object Object]", source: http://127.0.0.1:60042/editor.php?recipe=c1&layer=hey#main (141)
+- 20:27:45.500 INFO: GET 200 /masterimg.php?recipe=c1
+- 20:27:45.750 INFO: GET 200 /layer-edit.php?_=1502108865159&recipe=c1&layer=hey&b=110&ow=555&oh=416
+- 20:27:45.797 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:60042/editor.php?recipe=c1&layer=hey#main
+- 20:27:46.640 INFO: GET 200 /test/gettestlist.php
+[0807/202746:INFO:CONSOLE(335)] "[object Object]", source: http://127.0.0.1:60042/editor.php?recipe=c1&layer=hey#main (335)
+- 20:27:46.250 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_33_AA0034_53-fail%20-%20Copy.jpg
+- 20:27:46.250 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_35_AA0039_136-fail%20-%20Copy.jpg
+- 20:27:46.328 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_27_AA0039_26-fail%20-%20Copy.jpg
+- 20:27:46.328 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_25_AA0034_4-fail%20-%20Copy.jpg
+- 20:27:46.328 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_31_AA0039_31-fail%20-%20Copy.jpg
+- 20:27:46.328 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_27_AA0039_26-fail%20-%20Copy%20-%20Copy.jpg
+- 20:27:47.875 INFO: GET 200 /test/testimg.php?file=26_UCA0796S-3_35_AA0039_40-fail%20-%20Copy.jpg
+- 20:27:47.875 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_12_AA0034_40-fail.jpg
+- 20:27:47.906 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_13_AA0034_46-fail.jpg
+- 20:27:47.937 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_15_AA0034_53-fail.jpg
+- 20:27:47.937 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_16_AA0034_32-fail.jpg
+- 20:27:47.937 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_15_AA0034_45-fail.jpg
+- 20:27:47.094 INFO: GET 200 /test/gettestlist.php
+- 20:27:47.312 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_19_AA0034_39-fail.jpg
+- 20:27:48.390 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_6_AA0034_134-fail.jpg
+- 20:27:48.390 INFO: GET 200 /test/testimg.php?file=27_UCA0796S-3_9_AA0034_90-fail.jpg
+- 20:27:48.969 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:60042/editor.php?recipe=c1&layer=hey#main
+- 20:27:48.984 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:60042/editor.php?recipe=c1&layer=hey#test
+- 20:27:49.625 INFO: GET 200 /test/gettestlist.php
+- 20:27:50.484 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:60042/editor.php?recipe=c1&layer=hey#test
+- 20:27:50.484 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:60042/editor.php?recipe=c1&layer=hey#main
+- 20:27:50.859 INFO: GET 200 /test/gettestlist.php
+- 20:27:51.828 DEBUG: WM_DESTROY
+- 20:27:51.828 DEBUG: RemoveBrowserWindow(): hwnd = 525826
+- 20:27:51.844 INFO: Stopping Mongoose web server
+- 20:27:51.844 DEBUG: Mongoose webserver stopped immediately
+- 20:27:51.844 DEBUG: RemoveBrowserWindow(): hwnd = 787450
+- 20:27:51.844 DEBUG: GetBrowserWindow(): not found, hwnd = 787450
+- 20:27:51.844 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 20:27:51.922 INFO: Ended application
+- 20:27:51.937 INFO: --------------------------------------------------------
+- 20:27:51.641 DEBUG: OnBrowserDestroyed()
+- 09:28:36.125 INFO: --------------------------------------------------------
+- 09:28:36.125 INFO: Started application
+- 09:28:36.125 INFO: Logging to: C:\Users\Andre\Desktop\cutcheck-master\debug.log
+- 09:28:36.125 INFO: Log level = DEBUG4
+- 09:28:36.125 INFO: Starting Mongoose 3.9c web server
+- 09:28:36.125 INFO: WWW directory: C:\Users\Andre\Desktop\cutcheck-master\www
+- 09:28:36.125 INFO: Index files: index.html,index.php
+- 09:28:36.140 INFO: CGI interpreter: C:\Users\Andre\Desktop\cutcheck-master\php\php-cgi.exe
+- 09:28:36.140 INFO: CGI pattern: **.php$
+- 09:28:36.140 INFO: CGI environment variables set: TMP=C:\Users\Andre\AppData\Local\Temp\,TEMP=C:\Users\Andre\AppData\Local\Temp\,TMPDIR=C:\Users\Andre\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=31.8
+- 09:28:36.156 INFO: Web server url: http://127.0.0.1:55104/
+- 09:28:36.156 INFO: remote_debugging_port = 60450
+- 09:28:36.156 DEBUG: Command line string for the browser process: "C:\Users\Andre\Desktop\cutcheck-master\cutcheck.exe" --lang=en-US --log-file="C:\Users\Andre\Desktop\cutcheck-master\debug.log" --remote-debugging-port=60450 --no-sandbox
+- 09:28:38.344 DEBUG: App::OnContextInitialized()
+- 09:28:38.344 DEBUG: Window max width/height = 1286/680
+- 09:28:38.344 DEBUG: Window max size exceeded, new width/height = 1024/680
+- 09:28:38.344 DEBUG: GetBrowserWindow(): not found, hwnd = 2753142
+- 09:28:38.344 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:28:38.344 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:28:38.344 DEBUG: StoreBrowserWindow(): hwnd = 2753142
+- 09:28:38.375 DEBUG: BrowserWindow::OnSize() failed: CefBrowser object not created yet
+- 09:28:38.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Andre\Desktop\cutcheck-master\cutcheck.exe" --type=gpu-process --channel="3944.0.1887020129\1039282125" --no-sandbox --lang=en-US --log-file="C:\Users\Andre\Desktop\cutcheck-master\debug.log" --disable-d3d11 --supports-dual-gpus=false --gpu-driver-bug-workarounds=0,3,5,12,22 --gpu-vendor-id=0x8086 --gpu-device-id=0x0f31 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=10.18.10.4491 --lang=en-US --log-file="C:\Users\Andre\Desktop\cutcheck-master\debug.log" /prefetch:822062411
+- 09:28:38.422 DEBUG: ClientHandler::OnAfterCreated()
+- 09:28:38.422 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:28:38.422 INFO: DPI, ppix = 96, ppiy = 96
+- 09:28:38.422 INFO: DPI, browser zoom level = 0
+- 09:28:38.453 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:28:39.000 DEBUG: Command line string for the renderer process: "C:\Users\Andre\Desktop\cutcheck-master\cutcheck.exe" --type=renderer --no-sandbox --lang=en-US --lang=en-US --log-file="C:\Users\Andre\Desktop\cutcheck-master\debug.log" --channel="3944.1.637745920\468565660" /prefetch:673131151
+- 09:28:39.297 DEBUG: OnBrowserCreated()
+- 09:28:43.609 INFO: GET 200 /
+- 09:28:43.140 DEBUG: OnContextCreated()
+- 09:28:43.656 INFO: GET 200 /bower_components/bootstrap/dist/css/bootstrap.min.css
+- 09:28:43.765 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:55104/
+- 09:28:45.719 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:55104/
+- 09:28:45.344 DEBUG: OnContextCreated()
+- 09:28:45.844 INFO: GET 200 /pro/index.php
+- 09:28:45.859 INFO: GET 200 /js/ajaxr.js
+- 09:28:45.125 INFO: GET 200 /masterimg.php?recipe=c1
+- 09:28:45.156 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:55104/pro/index.php
+- 09:28:47.312 INFO: GET 200 /pro/list.php
+[0808/092847:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected token <", source: http://127.0.0.1:55104/pro/index.php (1)
+- 09:29:13.047 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:55104/pro/index.php
+- 09:29:13.187 INFO: GET 302 /pro/endlot.php
+- 09:29:13.781 DEBUG: OnContextCreated()
+- 09:29:13.297 INFO: GET 200 /pro/index.php
+- 09:29:13.328 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:55104/pro/index.php
+- 09:29:26.219 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:55104/pro/index.php
+- 09:29:26.328 INFO: GET 302 /pro/index.php?lotn=test&recipe=c1
+- 09:29:26.937 DEBUG: OnContextCreated()
+- 09:29:26.437 INFO: GET 200 /pro/index.php
+- 09:29:27.703 INFO: GET 200 /masterimg.php?recipe=c1
+- 09:29:27.719 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:55104/pro/index.php
+- 09:29:29.828 INFO: GET 200 /pro/list.php
+- 09:29:29.469 INFO: GET 200 /pro/cwtest.php?target=26_UCA0796S-3_25_AA0034_4-fail%20-%20Copy.jpg&recipe=c1&lc=0
+- 09:29:29.469 INFO: GET 200 /pro/imgtest.php?file=26_UCA0796S-3_25_AA0034_4-fail%20-%20Copy.jpg
+- 09:29:31.594 INFO: GET 200 /pro/list.php
+- 09:29:31.203 INFO: GET 200 /pro/imgtest.php?file=26_UCA0796S-3_27_AA0039_26-fail%20-%20Copy%20-%20Copy.jpg
+- 09:29:31.203 INFO: GET 200 /pro/cwtest.php?target=26_UCA0796S-3_27_AA0039_26-fail%20-%20Copy%20-%20Copy.jpg&recipe=c1&lc=0
+- 09:29:32.344 INFO: GET 200 /pro/list.php
+- 09:29:33.937 INFO: GET 200 /pro/cwtest.php?target=26_UCA0796S-3_27_AA0039_26-fail%20-%20Copy.jpg&recipe=c1&lc=0
+- 09:29:33.937 INFO: GET 200 /pro/imgtest.php?file=26_UCA0796S-3_27_AA0039_26-fail%20-%20Copy.jpg
+- 09:29:34.062 INFO: GET 200 /pro/list.php
+- 09:29:35.687 INFO: GET 200 /pro/cwtest.php?target=26_UCA0796S-3_31_AA0039_31-fail%20-%20Copy.jpg&recipe=c1&lc=0
+- 09:29:35.687 INFO: GET 200 /pro/imgtest.php?file=26_UCA0796S-3_31_AA0039_31-fail%20-%20Copy.jpg
+- 09:29:36.812 INFO: GET 200 /pro/list.php
+- 09:29:36.406 INFO: GET 200 /pro/cwtest.php?target=26_UCA0796S-3_33_AA0034_53-fail%20-%20Copy.jpg&recipe=c1&lc=0
+- 09:29:36.406 INFO: GET 200 /pro/imgtest.php?file=26_UCA0796S-3_33_AA0034_53-fail%20-%20Copy.jpg
+- 09:29:38.547 INFO: GET 200 /pro/list.php
+- 09:29:38.156 INFO: GET 200 /pro/cwtest.php?target=26_UCA0796S-3_35_AA0039_136-fail%20-%20Copy.jpg&recipe=c1&lc=0
+- 09:29:38.156 INFO: GET 200 /pro/imgtest.php?file=26_UCA0796S-3_35_AA0039_136-fail%20-%20Copy.jpg
+- 09:29:39.265 INFO: GET 200 /pro/list.php
+- 09:29:40.875 INFO: GET 200 /pro/cwtest.php?target=26_UCA0796S-3_35_AA0039_40-fail%20-%20Copy.jpg&recipe=c1&lc=0
+- 09:29:40.875 INFO: GET 200 /pro/imgtest.php?file=26_UCA0796S-3_35_AA0039_40-fail%20-%20Copy.jpg
+- 09:29:41.000 INFO: GET 200 /pro/list.php
+- 09:29:41.453 INFO: GET 200 /pro/cwtest.php?target=27_UCA0796S-3_12_AA0034_40-fail.jpg&recipe=c1&lc=0
+- 09:29:41.453 INFO: GET 200 /pro/imgtest.php?file=27_UCA0796S-3_12_AA0034_40-fail.jpg
+- 09:29:43.578 INFO: GET 200 /pro/list.php
+- 09:29:43.078 INFO: GET 200 /pro/cwtest.php?target=27_UCA0796S-3_13_AA0034_46-fail.jpg&recipe=c1&lc=0
+- 09:29:43.078 INFO: GET 200 /pro/imgtest.php?file=27_UCA0796S-3_13_AA0034_46-fail.jpg
+- 09:29:44.203 INFO: GET 200 /pro/list.php
+- 09:29:45.687 INFO: GET 200 /pro/cwtest.php?target=27_UCA0796S-3_15_AA0034_45-fail.jpg&recipe=c1&lc=0
+- 09:29:45.687 INFO: GET 200 /pro/imgtest.php?file=27_UCA0796S-3_15_AA0034_45-fail.jpg
+- 09:29:46.812 INFO: GET 200 /pro/list.php
+- 09:29:46.281 INFO: GET 200 /pro/cwtest.php?target=27_UCA0796S-3_15_AA0034_53-fail.jpg&recipe=c1&lc=0
+- 09:29:46.281 INFO: GET 200 /pro/imgtest.php?file=27_UCA0796S-3_15_AA0034_53-fail.jpg
+- 09:29:47.406 INFO: GET 200 /pro/list.php
+- 09:29:48.859 INFO: GET 200 /pro/cwtest.php?target=27_UCA0796S-3_16_AA0034_32-fail.jpg&recipe=c1&lc=0
+- 09:29:48.859 INFO: GET 200 /pro/imgtest.php?file=27_UCA0796S-3_16_AA0034_32-fail.jpg
+- 09:29:49.000 INFO: GET 200 /pro/list.php
+- 09:29:49.453 INFO: GET 200 /pro/cwtest.php?target=27_UCA0796S-3_19_AA0034_39-fail.jpg&recipe=c1&lc=0
+- 09:29:49.453 INFO: GET 200 /pro/imgtest.php?file=27_UCA0796S-3_19_AA0034_39-fail.jpg
+- 09:29:51.578 INFO: GET 200 /pro/list.php
+- 09:29:51.047 INFO: GET 200 /pro/cwtest.php?target=27_UCA0796S-3_6_AA0034_134-fail.jpg&recipe=c1&lc=0
+- 09:29:51.047 INFO: GET 200 /pro/imgtest.php?file=27_UCA0796S-3_6_AA0034_134-fail.jpg
+- 09:29:52.156 INFO: GET 200 /pro/list.php
+- 09:29:53.625 INFO: GET 200 /pro/cwtest.php?target=27_UCA0796S-3_9_AA0034_90-fail.jpg&recipe=c1&lc=0
+- 09:29:53.625 INFO: GET 200 /pro/imgtest.php?file=27_UCA0796S-3_9_AA0034_90-fail.jpg
+- 09:29:54.750 INFO: GET 200 /pro/list.php
+- 09:29:55.875 INFO: GET 200 /pro/list.php
+- 09:29:56.000 INFO: GET 200 /pro/list.php
+- 09:29:57.140 INFO: GET 200 /pro/list.php
+- 09:29:58.250 INFO: GET 200 /pro/list.php
+- 09:29:59.375 INFO: GET 200 /pro/list.php
+- 09:30:02.844 INFO: GET 200 /pro/list.php
+- 09:30:03.265 INFO: GET 200 /pro/list.php
+- 09:30:04.406 INFO: GET 200 /pro/list.php
+- 09:30:06.609 INFO: GET 200 /pro/list.php
+- 09:30:06.406 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:55104/pro/index.php
+- 09:30:07.562 INFO: GET 302 /pro/endlot.php
+[0808/093007:INFO:CONSOLE(20)] "Uncaught NetworkError: A network error occurred.", source: http://127.0.0.1:55104/js/ajaxr.js (20)
+- 09:30:07.250 DEBUG: OnContextCreated()
+- 09:30:07.765 INFO: GET 200 /pro/index.php
+- 09:30:07.781 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:55104/pro/index.php
+- 09:30:11.750 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:55104/pro/index.php
+- 09:30:13.344 DEBUG: OnContextCreated()
+- 09:30:13.859 INFO: GET 200 /
+- 09:30:13.859 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:55104/
+- 09:30:14.203 DEBUG: WM_DESTROY
+- 09:30:14.250 DEBUG: RemoveBrowserWindow(): hwnd = 2753142
+- 09:30:14.250 INFO: Stopping Mongoose web server
+- 09:30:14.250 DEBUG: Mongoose webserver stopped immediately
+- 09:30:14.265 DEBUG: RemoveBrowserWindow(): hwnd = 328318
+- 09:30:14.265 DEBUG: GetBrowserWindow(): not found, hwnd = 328318
+- 09:30:14.265 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:30:15.484 INFO: Ended application
+- 09:30:15.484 INFO: --------------------------------------------------------
+- 09:30:15.047 DEBUG: OnBrowserDestroyed()

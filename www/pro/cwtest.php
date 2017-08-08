@@ -3,7 +3,7 @@
 require_once  __DIR__.'/../vendor/autoload.php';
 
 use Core\Bwcon\Bwcon;
-use Grafika\Grafika; // Import package
+//use Grafika\Grafika; // Import package
 
 include __DIR__.'/../filesetup.php';
 
@@ -21,6 +21,10 @@ if(getG('target')&&getG('recipe')){
 
   $layerlist = scandir($rpath.$sl.$_GET['recipe']);
 
+  if(!$layerlist)
+  {  echo  'scan '.$rpath.$sl.$_GET['recipe'].'dir fail';
+  exit();
+  }
   $layerlist = array_diff($layerlist,$filterfile);
   $ll =  array();
  foreach($layerlist as $la){
@@ -30,12 +34,12 @@ if(getG('target')&&getG('recipe')){
  }
 
 //  $layer = array();
+ $glc = $_GET['lc'];
 
+  $lc = count($ll);
 
-
-
-  $layerimg = $rpath.$sl.$_GET['recipe'].$sl.$ll[0].'.jpg';
-  $layerjson = $rpath.$sl.$_GET['recipe'].$sl.$ll[0].'.json';
+  $layerimg = $rpath.$sl.$_GET['recipe'].$sl.$ll[$glc].'.jpg';
+  $layerjson = $rpath.$sl.$_GET['recipe'].$sl.$ll[$glc].'.json';
 
 //  var_dump($layerimg);
 
@@ -51,7 +55,7 @@ if(getG('target')&&getG('recipe')){
     $br1 = $b1->get_avg_luminance();
    $dbr = $br1 - $brm;
     $b1->brightness($dbr);
-   $editor = Grafika::createEditor(); // Create editor
+  // $editor = Grafika::createEditor(); // Create editor
 
 
     if(file_exists($layerjson)&&file_exists($layerimg)){
@@ -64,11 +68,7 @@ if(getG('target')&&getG('recipe')){
     $b1->im = imagecrop($b1->im,['x' => $cx, 'y' => $cy, 'width' => $cw, 'height' => $ch]);
     }
     else{
-    ////$cw = $b2->getwidth();
-  //  $ch = $b2->getheight();
-  //  $cx = 0;
-  //  $cy = 0;
-  //  $lvl =0;
+
     echo 'error';
     exit();
     }
@@ -100,19 +100,35 @@ if(getG('target')&&getG('recipe')){
    if($tr=='fail'){
      $b1 = new Bwcon($testimg);
     // mkdir($prop.$sl.'fail' , 0777);
-     $b1->output($prop.$sl.$_COOKIE['lotn'].$sl.'fail'.$sl.$_GET['target']);
+     $b1->output($prop.$sl.$_COOKIE['lotn'].$sl.'fail'.$sl.$ll[$glc].'-'.$_GET['target']);
 
    }
-  /*  if($result==true){
-      $result = 1;
 
+
+
+
+    if(($lc-$_GET['lc']-1)>0&&$tr=='pass'){
+
+      $t = true;
     }
-    else
-    $result =0;*/
-    //var_dump($result);
-     echo (string)$result.':'.$tr;
-  //  echo json_encode($spec);
-  //echo $layerimg.':'.$testimg;
+    else {
+      $t = false;
+    }
+
+    $totaltest = scandir($prop.$sl.$_COOKIE['lotn']);
+    $totaltest = array_diff($totaltest,array('.','..','fail'));
+    $totallot = scandir($prp.$sl.$_COOKIE['lotn']);
+    $totallot = array_diff($totallot,array('.','..'));
+    $totalfail = scandir($prop.$sl.$_COOKIE['lotn'].$sl.'fail');
+    $totalfail = array_diff($totalfail,array('.','..'));
+    $r =array(
+        'result'=>$ll[$glc].':'.$result.':'.$tr,
+        'layercount'=>$lc-$_GET['lc']-1,
+        'con'=>$t ,///continues test??
+        'ctest'=>count($totaltest),'clot'=>count($totallot),'cfail'=>count($totalfail)
+    );
+
+    echo json_encode($r);
 
 }
 
@@ -141,6 +157,12 @@ for($i = 0;$i<$sx;$i++){
 }
 
 return $c;
+
+}
+
+function status(){
+
+
 
 }
 exit();

@@ -22,6 +22,12 @@ require_once  __DIR__.'/vendor/autoload.php';
          padding: 0px;
 
         }
+        .left{
+        float: left;
+        }
+        .right{
+        float: right;
+        }
     </style>
     <!-- Bootstrap -->
 
@@ -183,7 +189,7 @@ require_once  __DIR__.'/vendor/autoload.php';
           }
           setTimeout(function () {
             getrecipe();
-          }, 1000);
+          }, 300);
 
         });
 
@@ -208,7 +214,7 @@ require_once  __DIR__.'/vendor/autoload.php';
          if(type=='') {
           // console.log(type,document.getElementById('layer').style.display);
            document.getElementById('layer').style.display='none';
-           setTimeout(getlayer,1000)
+           setTimeout(getlayer,300)
          return false;
        }
        document.getElementById('layer').style.display='block';
@@ -223,7 +229,7 @@ require_once  __DIR__.'/vendor/autoload.php';
 
                 updatedom(layerlist);
               }
-                 setTimeout(getlayer,1000);
+                 setTimeout(getlayer,300);
 
           });
         }
@@ -237,8 +243,10 @@ require_once  __DIR__.'/vendor/autoload.php';
            var im = f[ky].slice(0,sf);
 
            if(ffk.toLowerCase().search('.json')<0){
-            ih =ih+'<a href="editor.php?recipe='+ type+'&layer='+ im
-               +'" value="'+f[ky]+'" id=layer-'+ky+'>'+f[ky]+'</a></br>';
+            ih =ih+'<a  class="left" href="editor.php?recipe='+ type+'&layer='+ im
+               +'" value="'+f[ky]+'" id=layer-'+ky+'>'+im+'</a>';
+           ih = ih+'<button class="right" onclick="deletelayer(event)" recipe="'+type
+                +'"" layer="'+im+'">delete</button></br></br>';
             }
          }
         document.getElementById('layer').innerHTML=ih;
@@ -246,6 +254,19 @@ require_once  __DIR__.'/vendor/autoload.php';
        }
      }
 
+
+function deletelayer(e){
+   var target = e.target;
+   var recipe = target.getAttribute('recipe');
+   var layer = target.getAttribute('layer');
+   console.log(recipe,layer);
+   var url='recipedelete.php?recipe='+recipe+'&layer='+layer;
+   httpGetAsync(url,function(val){
+
+
+   });
+
+}
 
 
   function selectr(e){

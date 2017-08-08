@@ -53,10 +53,11 @@ $sc = array_diff($sc,$fl);
 
       <h3>lot number:<?php echo $_COOKIE['lotn']; ?></h3>
       <h3>Recipe:<?php echo $_COOKIE['recipe']; ?></h3>
-      <a class="btn btn-default" href="#" id="start" role="button">start</a>
-      <a class="btn btn-default" href="#" id="end" role="button">end</a>
+      <a class="btn btn-primary" href="#" id="start" role="button">start</a>
+      <a class="btn btn-warning" href="#" id="end" role="button">end</a>
       <a class="btn btn-default" href="/pro/endlot.php" role="button">end lot</a>
-      </br>
+      <h3 id="info" style="display:inline;"></h3>
+    </br>
       <div class="row">
         <div class="col-xs-4">
            <img class="img-responsive" src="/masterimg.php?recipe=<?php echo $_COOKIE['recipe'];  ?>">
@@ -66,28 +67,27 @@ $sc = array_diff($sc,$fl);
         </div>
         <div class="col-xs-4">
           <h1> Result: </h1>
-          <span id="re"></span>
+          <div id="re"></div>
+          <div id="recount"></div>
+          <div id="restatus"></div>
         </div>
       </div>
   </div>
 
   <script src="/js/ajaxr.js"></script>
   <script>
+  var layer =<?php echo json_encode($sc,JSON_FORCE_OBJECT) ;?>;
+  var recipe = "<?php echo $_COOKIE['recipe']  ?>";
+  var start = false;
+
 
    document.body.onload=function(){
+  document.getElementById('info').innerHTML='<span class="badge">'+'stop'+'</span>';
 
-     var layer =<?php echo json_encode($sc,JSON_FORCE_OBJECT) ;?>;
-     var recipe = "<?php echo $_COOKIE['recipe']  ?>";
-
-
-
-    // console.log(layerjson);
-  //  document.getElementById('lotn').focus();
-    var start = false;
   document.getElementById('start').onclick=function(e){
    e.preventDefault();
   //  console.log('start');
-
+       document.getElementById('info').innerHTML='<span class="badge">'+'start'+'</span>';
     start = true;
 
   ///  startexe();
@@ -96,54 +96,83 @@ $sc = array_diff($sc,$fl);
   document.getElementById('end').onclick=function(e){
    e.preventDefault();
   //  console.log('end');
-
+   document.getElementById('info').innerHTML='<span class="badge">'+'stop'+'</span>';
     start = false;
   };
 
  setTimeout(startexe,1000);
 
-  function startexe(){
-    if(start){
-
-
-    httpg('GET','/pro/list.php',function(val){
-      //  console.log(val);
-        var list = JSON.parse(val);
-        if(JSON.stringify(list)=='{}'){
-          document.getElementById('re').innerHTML = 'complete test';
-
-            setTimeout(startexe,1000);
-        }
-
-        for (li in list){
-          // console.log(li,list[li]);
-          document.getElementById('img-test').src='/pro/imgtest.php?file='+list[li];
-            httpg('GET','/pro/cwtest.php?target='+list[li]+'&recipe='+ recipe ,
-            function(val1){
-            //  console.log(val1);
-             document.getElementById('re').innerHTML = val1;
-             setTimeout(startexe,1000);
-             return false;
-           } );
-          return false;
-
-        }
-      return false;
-    });
-
-
-    return false;
-    }
-    else{
-    //  console.log('stop testing');
-
-    setTimeout(startexe,1000);
-  }
-  }
 
 
 
    };
+
+   function startexe(){
+     if(start){
+
+
+     httpg('GET','/pro/list.php',function(val){
+       //  console.log(val);
+         var list = JSON.parse(val);
+         if(JSON.stringify(list)=='{}'){
+              //var temp =   document.getElementById('re').innerHTML;
+            document.getElementById('restatus').innerHTML = '<span class="label label-success">complete test</span';
+             setTimeout(startexe,1000);
+         }
+
+         for (li in list){
+           // console.log(li,list[li]);
+         imgtest(list[li],0);
+
+           return false;
+
+         }
+       return false;
+     });
+
+
+     return false;
+     }
+     else{
+     //  console.log('stop testing');
+
+     setTimeout(startexe,1000);
+   }
+   }
+
+
+   function imgtest(list,lc){
+     document.getElementById('img-test').src='/pro/imgtest.php?file='+list;
+       httpg('GET','/pro/cwtest.php?target='+list+'&recipe='+ recipe+'&lc='+lc ,
+       function(val1){
+         //console.log(val1);
+       var val1 = JSON.parse(val1);
+       if(lc==0)
+        document.getElementById('re').innerHTML = val1['result'];
+        else{
+        var ot = document.getElementById('re').innerHTML;
+        document.getElementById('re').innerHTML=ot+'</br>'+val1['result'];
+
+        }
+        if(val1['cfail']>0){
+         document.getElementById('recount').innerHTML=
+         '<span class="label label-default">'+val1['ctest']+'/'+val1['clot']+'</span>'+
+          '<span class="label label-danger">fail: '+val1['cfail']+'</span>'   ;
+        }else{
+          document.getElementById('recount').innerHTML=
+          '<span class="label label-default">'+val1['ctest']+'/'+val1['clot']+'</span>'+
+           '<span class="label label-success">fail: '+val1['cfail']+'</span>'   ;
+
+
+        }
+        if(val1['con'])
+        imgtest(list,lc+1);
+        else
+        setTimeout(startexe,1000);
+        return false;
+      });
+
+   }
   </script>
 
 
