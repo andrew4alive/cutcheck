@@ -53,11 +53,18 @@ if(getG('target')&&getG('recipe')){
 
     $brm = $bm->get_avg_luminance();
     $br1 = $b1->get_avg_luminance();
-   $dbr = $br1 - $brm;
-    $b1->brightness($dbr);
+  // $dbr = $br1 - $brm;
+    //$b1->brightness($dbr);
   // $editor = Grafika::createEditor(); // Create editor
-
-
+  $dbr = $br1 - $brm;
+ //   $dbr = $brm - $br1;
+ if($brm>$br1){
+   $b1->brightness(-$dbr);
+ }
+ if($brm<$br1){
+   $b1->brightness($dbr);
+ }
+  $adbr = $b1->get_avg_luminance();
     if(file_exists($layerjson)&&file_exists($layerimg)){
     $s  = json_decode(file_get_contents($layerjson),true);
     $cw = $s['width'];
@@ -77,9 +84,9 @@ if(getG('target')&&getG('recipe')){
     $img = imagecreatetruecolor($cw, $ch);
     $bg = imagecolorallocate ( $img, 255, 255, 255 );
     imagefilledrectangle($img,0,0,$cw,$ch,$bg);
-    imagejpeg($img,$temp.$sl."white.jpg");
+  //  imagejpeg($img,$temp.$sl."white.jpg");
   //    header('Content-type: image/jpeg');
-    $b1->output($temp.$sl.'temp.jpg');
+  //  $b1->output($temp.$sl.'temp.jpg');
     //$result = $editor->equal( $temp.$sl."white.jpg", $temp.$sl.'temp.jpg' );
    $result = compareimgwhite($b1->im);
    $tr = 'fail';
@@ -125,7 +132,9 @@ if(getG('target')&&getG('recipe')){
         'result'=>$ll[$glc].':'.$result.':'.$tr,
         'layercount'=>$lc-$_GET['lc']-1,
         'con'=>$t ,///continues test??
-        'ctest'=>count($totaltest),'clot'=>count($totallot),'cfail'=>count($totalfail)
+        'ctest'=>count($totaltest),'clot'=>count($totallot),'cfail'=>count($totalfail),
+        'brightness'=>$br1,
+        'adbr'=> $adbr
     );
 
     echo json_encode($r);

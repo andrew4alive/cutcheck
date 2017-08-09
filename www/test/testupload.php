@@ -9,7 +9,7 @@ include_once __DIR__.'/../filesetup.php';
     $redirect = $_GET['_r'];
   //  echo $redirect;
    $files = scandir($tpath); // get all file names
-   if(!file_exists($tpath)) echo 'no file exis';
+   if(!file_exists($tpath)) {echo 'no file exis'; exit();}
 
    foreach($files as $file){ // iterate files
 
@@ -23,6 +23,17 @@ include_once __DIR__.'/../filesetup.php';
 
     }
   header('Location:'.$redirect);
+  //  echo $redirect;
+?>
+<html>
+<body>
+<script>
+
+//window.location.href = "<?php echo $redirect; ?>";
+</script>
+</body>
+<html>
+<?php
    exit();
 
 ?>

@@ -11,6 +11,21 @@ class Bwcon{
 
     if(!file_exists($source_file)) die('no file');
     $this->fileName = $source_file;
+    $type = strtolower(substr($source_file,strpos($source_file,'.')+1));
+    switch ($type)
+ {
+     case 'gif':
+         $this->im = imagecreatefromgif($source_file);
+         break;
+     case 'jpg':
+         $this->im = imagecreatefromjpeg($source_file);
+         break;
+     case 'png':
+         $this->im = imagecreatefrompng($source_file);
+         break;
+     default:
+         throw new Exception('Unrecognized image type ' . $type);
+ }
     $this->im = ImageCreateFromJpeg($source_file);
 
     $this->w = imagesx($this->im);

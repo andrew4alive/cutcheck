@@ -3,8 +3,8 @@ include_once __DIR__.'/filesetup.php';
 
   if(isset($_POST['recipename'])){
       $rn = $_POST['recipename'];
-      print($rn);
-      print($_FILES["fileupload"]["name"]);
+     // print($rn);
+     // print($_FILES["fileupload"]["name"]);
   }
   else{
 
@@ -23,6 +23,16 @@ include_once __DIR__.'/filesetup.php';
        $newURL = '/editor.php';
        header('Location: '.$newURL);
 
+       ?>
+       <html>
+       <body>
+       <script>
+
+     //  window.location.href = "<?php echo $newURL ?>";
+       </script>
+      </body>
+       <html>
+       <?php
      }
      else{
 

@@ -126,9 +126,7 @@ if(file_exists($lp.'.json')){
         <input type="hidden" class="form-control"  name="layer" value="<?php echo $_GET['layer'] ?>" >
         </form>
         </span>
-        <!--<span class="col-lg-5">
-         <img class="img-responsive" src="b.php?b=<?php echo $brightness-$brightness1 ?>">
-       </span>-->
+      
 
 
    </div>
@@ -145,11 +143,12 @@ if(file_exists($lp.'.json')){
   <div  class="container" id="test" name="page">
 
     <!-- upload test image forms-->
-    <?php $redirect = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"
+    <?php $redirect = /*(isset($_SERVER['HTTPS']) ? "https" : "http") . */"$_SERVER[REQUEST_URI]"
                         .'#test';
-          $redirect = urlencode($redirect);
+         $redirect = urlencode($redirect);
+        //  echo $redirect;
     ?>
-    <form class="form-horizontal" action="/test/testupload.php?_r=<?php echo $redirect ?>" id="testuploadform" method="post" enctype="multipart/form-data">
+    <form class="form-horizontal" action="/test/testupload.php?_r=<?php echo $redirect; ?>" id="testuploadform" method="post" enctype="multipart/form-data">
       <h1>upload test image</h1>
      <input id="fileupload" name="fileupload[]" type="file" multiple="multiple">upload master image</input>
      <input type="hidden" id="recipe" name="recipe" value="<?php echo $_GET['recipe'] ?>" ></input>
@@ -168,6 +167,9 @@ if(file_exists($lp.'.json')){
         <div class="col-xs-6">
            <img id="img-ori" class="img-responsive" src="masterimg.php?recipe=<?php echo $_GET['recipe'] ;?>">
          </div>
+         <div class="col-xs-6">
+            <img id="img-test" class="img-responsive">
+          </div>
          <div class="col-xs-12" id="testimgresult">
          </div>
         </div>
@@ -633,9 +635,13 @@ function testimgexe(e){
               // return false;
     httpAsync('GET',url,function(val){
       console.log(val);
-
-      alert('total black pixel:'+val);
-      document.getElementById('testimgresult').innerHTML= '<h1 >total black pixel:'+val+'</h1>';
+      var newurl = url+'&pic=autobrightness';
+      document.getElementById('img-test').src=newurl;
+      var v = JSON.parse(val);
+      alert('total black pixel:'+v['result']);
+      document.getElementById('testimgresult').innerHTML= '<h1 >total black pixel:'+v['result']+'</h1>'+
+                                                          '<h1>test image brightness: '+v['brightness']+'</h1>'+
+                                                          '<h1>after auto britngness: '+v['adbr']+'</h1>';
     });
 
 

@@ -19,9 +19,21 @@ if(getG('target')&&getG('recipe')&&getG('layer')){
     $brm = $bm->get_avg_luminance();
     $br1 = $b1->get_avg_luminance();
    $dbr = $br1 - $brm;
+  //   $dbr = $brm - $br1;
+  if($brm>$br1){
+    $b1->brightness(-$dbr);
+  }
+  if($brm<$br1){
     $b1->brightness($dbr);
-   $editor = Grafika::createEditor(); // Create editor
+  }
+    $adbr = $b1->get_avg_luminance();
+//   $editor = Grafika::createEditor(); // Create editor
+   if(isset($_GET['pic'])&&trim($_GET['pic'])=='autobrightness'){
+      header('Content-type:image/jpeg');
+      $b1->output();
+      exit();
 
+   }
 
     if(file_exists($layerjson)&&file_exists($layerimg)){
     $s  = json_decode(file_get_contents($layerjson),true);
@@ -65,16 +77,14 @@ if(getG('target')&&getG('recipe')&&getG('layer')){
      }
 
    }
-  /*  if($result==true){
-      $result = 1;
 
-    }
-    else
-    $result =0;*/
-    //var_dump($result);
-     echo (string)$result.':'.$tr;
-  //  echo json_encode($spec);
-  //echo $layerimg.':'.$testimg;
+     $r =array(
+      'result'=>$result.':'.$tr,
+      'brightness'=>$br1,
+      'adbr'=>$adbr /// brightness adfter auto adjust
+     );
+
+     echo json_encode($r);
 
 }
 
