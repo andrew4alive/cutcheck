@@ -142,11 +142,14 @@ $sc = array_diff($sc,$fl);
 
 
    function imgtest(list,lc){
-     document.getElementById('img-test').src='/pro/imgtest.php?file='+list;
+    // document.getElementById('img-test').src='/pro/imgtest.php?file='+list;
        httpg('GET','/pro/cwtest.php?target='+list+'&recipe='+ recipe+'&lc='+lc ,
        function(val1){
          //console.log(val1);
+
        var val1 = JSON.parse(val1);
+       document.getElementById('img-test').src="data:image/jpeg;base64,"+val1['base64'];
+
        if(lc==0)
         document.getElementById('re').innerHTML = val1['result'];
         else{

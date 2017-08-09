@@ -1,15 +1,7 @@
 <?php
 require_once  __DIR__.'/vendor/autoload.php';
 
-use Core\Bwcon\Bwcon;
 
-$b = new Bwcon('1.JPG');
-
-$brightness = $b->get_avg_luminance();
-
-$b = new Bwcon('3.JPG');
-
-$brightness1 = $b->get_avg_luminance();
 ?>
 
 <!DOCTYPE html>

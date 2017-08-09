@@ -64,6 +64,19 @@ if(getG('target')&&getG('recipe')){
  if($brm<$br1){
    $b1->brightness($dbr);
  }
+
+
+ //// test to image to base64
+ ob_start ();
+
+   imagejpeg ($b1->im);
+   $image_data = ob_get_contents ();
+
+ ob_end_clean ();
+
+ $image_data_base64 = base64_encode ($image_data);
+
+
   $adbr = $b1->get_avg_luminance();
     if(file_exists($layerjson)&&file_exists($layerimg)){
     $s  = json_decode(file_get_contents($layerjson),true);
@@ -122,6 +135,9 @@ if(getG('target')&&getG('recipe')){
       $t = false;
     }
 
+
+
+
     $totaltest = scandir($prop.$sl.$_COOKIE['lotn']);
     $totaltest = array_diff($totaltest,array('.','..','fail'));
     $totallot = scandir($prp.$sl.$_COOKIE['lotn']);
@@ -134,7 +150,8 @@ if(getG('target')&&getG('recipe')){
         'con'=>$t ,///continues test??
         'ctest'=>count($totaltest),'clot'=>count($totallot),'cfail'=>count($totalfail),
         'brightness'=>$br1,
-        'adbr'=> $adbr
+        'adbr'=> $adbr,
+        'base64'=>$image_data_base64
     );
 
     echo json_encode($r);
